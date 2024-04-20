@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body{
+            font-family: Roboto;
+            background-color: #272727;
+        }
+
+        h1{
+            color: white;
+        }
+
+        li{
+            color: white;
+        }
+
+        a{
+            color: #3EA6FF;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #a73bff;
+        }
+
+        a:hover{
+            color: #0088ff;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: #3EA6FF;
+        }
+
+        .especial{
+            background-color: #F3F3F4;
+        }
+
+        .especial::before{
+            content: '<<';
+        }
+        .especial::after{
+            content: '>>';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a class="especial" href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo/videos" target="_blank" rel="external">Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=34Na4j8AVgA" target="_blank" rel="external">Olha esse video que legal</a></li>
+    </ul>
+</body>
+</html>
